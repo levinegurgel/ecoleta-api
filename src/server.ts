@@ -4,9 +4,12 @@ const app = express();
 
 app.get('/users', (request, response) => {
     
-    console.log('Listagem de usuários');
-
-    response.send("Hello World");
+    response.json([
+        'João',
+        'José',
+        'Maria',
+        'Isabel'
+    ]);
 
 })
 
