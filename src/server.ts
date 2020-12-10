@@ -11,6 +11,15 @@ app.get('/users', (request, response) => {
         'Isabel'
     ]);
 
+    app.post('/users', (request, response) =>{
+        const user = {
+            name: 'João',
+            email: 'joao@gmail.com'
+        };
+
+        return response.json(user);
+    });
+
 })
 
 app.listen(3333)
